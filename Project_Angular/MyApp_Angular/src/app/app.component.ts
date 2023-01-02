@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyApp_Angular';
+  isAliveCheckSample:boolean = true;
+
+  disposeCheckedSample():void{
+    this.isAliveCheckSample = false
+  }
 }
