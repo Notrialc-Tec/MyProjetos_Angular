@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>App Diretivas-Project</h1>
+  </header>
+  <app-card  ></app-card>
+
+  <Ul>
+    <li *ngFor ="let p of itens">{{ p }}</li>
+  </Ul>
+  <button (click)="adcionar()">Adcionar</button>
+  <div [ngSwitch]="menuType">
+    <div *ngSwitchCase="'user'">
+      <li>editar perfil</li>
+      <li>Adcionar cartão</li>
+    </div>
+    <div *ngSwitchCase="'admin'">
+      <li>editar perfil</li>
+      <li>Adcionar cartão</li>
+      <li>gerenciar Usuarios</li>
+    </div>
+    <div *ngSwitchCase="'superUser'">
+      <li>editar perfil</li>
+      <li>Adcionar cartão</li>
+      <li>gerenciar Usuarios</li>
+      <li>Gerenciar Admins</li>
+    </div>
+  </div>
+</body>
+</html>
+
+<router-outlet></router-outlet>
