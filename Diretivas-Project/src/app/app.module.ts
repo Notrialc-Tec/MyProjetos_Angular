@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { DAtributosComponent } from './d-atributos/d-atributos.component';
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,9 @@ import { DAtributosComponent } from './d-atributos/d-atributos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
